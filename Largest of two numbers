@@ -1,0 +1,15 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int Praneeth=sc.nextInt();
+		if (sathwik>Praneeth) {
+			System.out.println(sathwik);
+		}
+		else {
+			System.out.println(Praneeth);
+		}
+		}
+	}
