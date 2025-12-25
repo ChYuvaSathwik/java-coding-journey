@@ -1,0 +1,13 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int [] Praneeth=new int[sathwik];
+		for(int i=0;i<sathwik;i++) {
+			Praneeth[i]=sc.nextInt();
+		}
+		System.out.println(Arrays.toString(Praneeth));
+	}}
+	
