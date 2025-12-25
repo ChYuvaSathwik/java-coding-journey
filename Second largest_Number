@@ -7,9 +7,23 @@ public class FirstProgram{
 		int [] balu=new int[sathwik];
 		for(int i=0;i<sathwik;i++) {
 			balu[i]=sc.nextInt();
+			
 		}
-		Arrays.sort(balu);
-		int k=balu.length-2;
-		System.out.println(balu[k]);
+		ArrayList<Integer>hm=new ArrayList<>();
+		for(int j:balu) {
+			hm.add(j);
+		}
+		LinkedHashSet<Integer>kl=new LinkedHashSet<>(hm);
+		ArrayList<Integer>hj=new ArrayList<>(kl);
+		if(hj.size()<2) {
+			System.out.println("less than 2 size no 2nd largest");
+		}
+		else {
+			Collections.sort(hj);
+			int h=hj.size()-2;
+			System.out.println(hj.get(h));
+		}
+		
+		
 	}
 	}
