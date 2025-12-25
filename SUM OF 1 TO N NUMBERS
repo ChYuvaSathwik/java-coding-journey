@@ -1,0 +1,13 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int balu=0;
+		for(int i=1;i<=sathwik;i++) {
+			balu=balu+i;
+		}
+		System.out.println(balu);
+	}
+	}
