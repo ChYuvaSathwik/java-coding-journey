@@ -1,0 +1,19 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int [] balu=new int[sathwik];
+		int min_value=Integer.MAX_VALUE;
+		for(int i=0;i<sathwik;i++) {
+			balu[i]=sc.nextInt();
+		}
+		for(int j=0;j<sathwik;j++) {
+			if (balu[j]<min_value) {
+				min_value=balu[j];
+			}
+		}
+		System.out.println(min_value);
+	}
+	}
