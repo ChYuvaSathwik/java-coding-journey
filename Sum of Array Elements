@@ -1,0 +1,18 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int balu=0;
+		int [] Praneeth=new int[sathwik];
+		for(int i=0;i<sathwik;i++) {
+			Praneeth[i]=sc.nextInt();
+		}
+		for(int j=0;j<sathwik;j++) {
+			balu=balu+Praneeth[j];
+			
+		}
+		System.out.println(balu);
+		
+	}}
