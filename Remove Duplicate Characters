@@ -1,0 +1,19 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		String sathwik=sc.next();
+		String removal="";
+		for(char s:sathwik.toCharArray()) {
+			if(removal.contains(String.valueOf(s))) {
+				
+			}
+			else {
+				removal=removal+s;
+			}
+		
+		}
+	System.out.println(removal);
+	}
+	}
