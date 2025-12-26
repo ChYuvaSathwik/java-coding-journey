@@ -23,11 +23,11 @@ public class FirstProgram{
 				break;
 			}}
 		if(Praneeth) {
-			System.out.println("Angram");
+			System.out.println("Anagram");
 			
 		}
 		else {
-			System.out.println("Not Angram");
+			System.out.println("Not Anagram");
 		}
 		
 	}}
