@@ -1,0 +1,14 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		String sathwik=sc.next();
+		String Praneeth=sc.next();
+		String sathwik1=sathwik.toUpperCase();
+		String Praneeth1=Praneeth.toLowerCase();
+		System.out.println(sathwik1);
+		System.out.println(Praneeth1);
+		
+	}
+}
