@@ -1,0 +1,17 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		String sathwik=sc.next();
+		String Praneeth="AEIOUaeiou";
+		int count_vowel=0;
+		for(char s:sathwik.toCharArray()) {
+			if(Praneeth.contains(String.valueOf(s))) {
+				count_vowel=count_vowel+1;
+			}
+			}
+		System.out.println(count_vowel);
+			
+		}
+	}
