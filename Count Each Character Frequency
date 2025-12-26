@@ -1,0 +1,15 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		String sathwik=sc.next();
+		LinkedHashMap<Character,Integer>hm=new LinkedHashMap<>();
+		for(char s:sathwik.toCharArray()) {
+			hm.put(s,hm.getOrDefault(s,0)+1);
+			
+		}
+		System.out.println(hm);
+		
+	}
+}
