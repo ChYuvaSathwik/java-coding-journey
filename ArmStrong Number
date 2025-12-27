@@ -1,0 +1,22 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		String balu=Integer.toString(sathwik);
+		int jasanth=balu.length();
+		int new1=0;
+		for(char h:balu.toCharArray()) {
+			int ok=h-48;
+			new1=new1+(int) Math.pow(ok,jasanth);
+			
+		}
+		if(sathwik==new1) {
+			System.out.println("ArmStrong number");
+		}
+		
+		else {
+			System.out.println("Not ArmStrong number");
+		}
+	}}
