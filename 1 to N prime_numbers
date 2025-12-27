@@ -1,0 +1,25 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		for(int i=2;i<=sathwik;i++) {
+			boolean Balu=true;
+			int new1=i;
+			for(int k=2;k<=Math.sqrt(new1);k++) {
+				if(new1%k==0){
+					Balu=false;
+					break;
+					}
+				}
+			if(Balu) {
+				System.out.println(new1);
+			}
+		}
+		
+		
+		
+		
+	}
+	}
