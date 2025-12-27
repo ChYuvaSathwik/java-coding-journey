@@ -1,0 +1,19 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int First=sc.nextInt();
+		int second=sc.nextInt();
+		for(int i=second;i>=First;i--) {
+			String new1=Integer.toString(i);
+			String palindrome="";
+			for(int j=new1.length()-1;j>=0;j--) {
+				palindrome=palindrome+new1.charAt(j);
+			}
+			if(palindrome.equals(new1)) {
+				System.out.println(new1);
+				return;
+			}
+		}
+	}}
