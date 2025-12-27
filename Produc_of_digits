@@ -1,0 +1,16 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int h=sc.nextInt();
+		int balu=1;
+		String w=Integer.toString(h);
+		for(char j:w.toCharArray()) {
+			balu=balu*(j-'0');
+			
+			
+		}
+		System.out.println(balu);
+	
+	}}
