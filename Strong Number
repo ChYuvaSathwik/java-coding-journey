@@ -1,0 +1,27 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int jas=0;
+		int sathwik=sc.nextInt();
+		String Praneeth=Integer.toString(sathwik);
+		for(char s:Praneeth.toCharArray()) {
+			int g=s-48;
+			int fact1=1;
+			for(int i=g;i>=1;i--) {
+				fact1=fact1*i;
+				
+			}
+			jas=jas+fact1;
+			
+		}
+		
+		if(jas==sathwik) {
+			System.out.println("Strong number");
+		}
+		else {
+			System.out.println("Not Strong number");
+		}
+	}
+	}
