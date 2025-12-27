@@ -1,0 +1,28 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		Boolean H=true;
+		if(sathwik<2) {
+			System.out.println("Not prime");
+			
+		}
+		else {
+			for(int i=2;i<=Math.sqrt(sathwik);i++) {
+				if (sathwik%i==0) {
+					H=false;
+					break;
+				}}
+			if (H) {
+				System.out.println("Prime number");
+			}
+			else {
+				System.out.println("Not Prime");
+			}
+			}
+		}
+		
+		
+	}
