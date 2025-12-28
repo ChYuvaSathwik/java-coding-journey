@@ -1,0 +1,35 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		ArrayList<Integer>hm=new ArrayList<>();
+		ArrayList<Integer>hm1=new ArrayList<>();
+		int[] Praneeth=new int[sathwik];
+		
+		for(int i=0;i<sathwik;i++) {
+			Praneeth[i]=sc.nextInt();
+			
+		}
+		for(int j:Praneeth) {
+			if(j!=0) {
+				hm.add(j);
+				
+			}
+			else {
+				hm1.add(j);
+			}
+		}
+			hm.addAll(hm1);
+			for(int fg:hm) {
+				System.out.print(fg+" ");
+			}
+		
+		
+		
+		
+		
+		
+	}
+	}
