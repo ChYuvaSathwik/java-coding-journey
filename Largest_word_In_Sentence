@@ -1,0 +1,15 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		String s=sc.nextLine();
+		String[] new_String_array=s.split(" ");
+		String hi="";
+		for(String M:new_String_array) {
+			if(hi.length()<M.length()) {
+				hi=M;
+			}
+		}
+		System.out.println(hi);
+	}}
