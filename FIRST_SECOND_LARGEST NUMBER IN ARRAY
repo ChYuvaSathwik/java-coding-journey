@@ -1,0 +1,22 @@
+package com.sathwik.first;
+import java.util.*;
+public class FirstProgram{
+	public static void main(String [] args ) {
+		Scanner sc=new Scanner(System.in);
+		int sathwik=sc.nextInt();
+		int [] Praneeth=new int [sathwik];
+		LinkedHashSet<Integer> hm1=new LinkedHashSet<>();
+		for(int i=0;i<sathwik;i++) {
+			Praneeth[i]=sc.nextInt();
+		}
+		Arrays.sort(Praneeth);
+		for(int j=0;j<sathwik;j++) {
+			hm1.add(Praneeth[j]);
+		}
+		ArrayList<Integer>hm2=new ArrayList<>(hm1);
+		int first_largest_index=hm2.size()-1;
+		int second_largest_index=hm2.size()-2;
+		System.out.print(hm2.get(first_largest_index)+" ");
+		System.out.print(hm2.get(second_largest_index));
+		
+	}}
