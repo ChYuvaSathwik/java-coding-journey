@@ -1,0 +1,33 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int sathwik=sc.nextInt();
+    	sc.nextLine();
+    	String [] Praneeth=new String[sathwik];
+    	for(int i=0;i<sathwik;i++) {
+    		Praneeth[i]=sc.nextLine();
+    	}
+    	HashMap<String,Integer>hm=new HashMap<>();
+    	
+    	for(String sk:Praneeth) {
+    		hm.put(sk,hm.getOrDefault(sk,0)+1);
+    		
+    	}
+    	ArrayList<Map.Entry<String,Integer>>new1=new ArrayList<>(hm.entrySet());
+    	new1.sort((a,b)-> Integer.compare(b.getValue(),a.getValue()));
+    	Map.Entry<String,Integer>first_index=new1.get(0);
+    	Map.Entry<String,Integer>second_index=new1.get(1);
+    	System.out.println(second_index);
+    	for(Map.Entry<String,Integer>hj:new1) {
+    		System.out.println(hj.getKey()+"->"+hj.getValue());
+    	}
+    	
+    	
+    	
+    	
+    	
+}}
