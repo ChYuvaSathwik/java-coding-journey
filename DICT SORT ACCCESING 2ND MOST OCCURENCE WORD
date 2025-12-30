@@ -1,0 +1,23 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.nextLine();
+    	String [] Praneeth=sathwik.split(" ");
+    	HashMap<String,Integer>hm=new HashMap<>();
+    	for(String ok:Praneeth) {
+    		hm.put(ok,hm.getOrDefault(ok,0)+1);
+    	}
+    	
+    	ArrayList<Map.Entry<String,Integer>>jasanth=new ArrayList<>(hm.entrySet());
+    	jasanth.sort((a,b)-> Integer.compare(b.getValue(),a.getValue()));
+    	
+    	Map.Entry<String,Integer> second_most_occurence=jasanth.get(1);
+    	
+    	
+    	System.out.println(second_most_occurence);
+    	
+}}
