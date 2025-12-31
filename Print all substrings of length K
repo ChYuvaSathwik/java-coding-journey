@@ -1,0 +1,16 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.next();
+    	int Praneeth=sc.nextInt();
+    	for(int i=0;i<sathwik.length()-Praneeth+1;i++) {
+    		String new1=sathwik.substring(i,i+Praneeth);
+    		System.out.println(new1);
+    	}
+    	
+    }
+    }
