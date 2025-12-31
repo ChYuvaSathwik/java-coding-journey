@@ -1,0 +1,27 @@
+class Solution {
+    public int[] topKFrequent(int[] nums, int k) {
+        HashMap<Integer,Integer>hm=new HashMap<>();
+        ArrayList<Integer>sathwik=new ArrayList<>();
+        ArrayList<Integer>balu=new ArrayList<>();
+        for(int i:nums){
+            hm.put(i,hm.getOrDefault(i,0)+1);
+        }
+
+        ArrayList<Map.Entry<Integer,Integer>>Praneeth=new ArrayList<>(hm.entrySet());
+
+        Praneeth.sort((a,b)->Integer.compare(b.getValue(),a.getValue()));
+
+        for(int i=0;i<k;i++){
+            Map.Entry<Integer,Integer>Frequent=Praneeth.get(i);
+            int key1=Frequent.getKey();
+            balu.add(key1);
+        }
+        int [] Rithika=new int[balu.size()];
+        for(int i=0;i<balu.size();i++){
+            Rithika[i]=balu.get(i);
+        }
+        return Rithika;
+
+        
+    }
+}
