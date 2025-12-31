@@ -1,0 +1,25 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.nextLine();
+    	String [] Praneeth=sathwik.split(" ");
+    	ArrayList<String>hm=new ArrayList<>();
+    	for(String s:Praneeth) {
+    		String f="";
+    		for(int i=s.length()-1;i>=0;i--) {
+    			char r=s.charAt(i);
+    			f=f+r;
+    		}
+    		f=f+" ";
+    		hm.add(f);
+    	}
+    	for(String t:hm) {
+    		System.out.print(t);
+    	}
+    		
+    
+}}
