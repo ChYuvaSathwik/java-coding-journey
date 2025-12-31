@@ -1,0 +1,26 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.next();
+    	String Praneeth=sc.next();
+    	int count1=0;
+    	int number=Praneeth.length();
+    	for(int i=0;i<sathwik.length()-number+1;i++) {
+    		String sh=sathwik.substring(i,number+i);
+    		if (sh.equals(Praneeth)) {
+    			count1=count1+1;
+    			
+    		}
+    		
+    		
+    		
+    	}
+    	System.out.println(count1);
+    	
+    	
+    }
+    }
