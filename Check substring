@@ -1,0 +1,29 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.nextLine();
+    	String Praneeth=sc.next();
+    	boolean hi=false;
+    	if(Praneeth.length()>sathwik.length()) {
+    		System.out.println("false");
+    		return;
+    	}
+    	for(int i=0;i<sathwik.length()-Praneeth.length()+1;i++) {
+    		String new1=sathwik.substring(i,Praneeth.length()+i);
+    		if(new1.equals(Praneeth)) {
+    			hi=true;
+    			break;
+    			}
+    		}
+    	System.out.print(hi);
+    		
+    	}
+    	
+    		
+    	}
+    	
+}
