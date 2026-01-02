@@ -1,0 +1,22 @@
+class Solution {
+    public int countSubstrings(String s) {
+        int count1=0;
+        for(int i=0;i<s.length();i++){
+            for(int j=i+1;j<s.length()+1;j++){
+                String Praneeth=s.substring(i,j);
+                String sathwik="";
+                for(int k=Praneeth.length()-1;k>=0;k--){
+                sathwik=sathwik+Praneeth.charAt(k);
+                }
+                if(sathwik.equals(Praneeth)){
+                    count1=count1+1;
+                }
+            }
+        }
+        return count1;
+        
+    }
+}
+
+
+#optimization requried
