@@ -1,0 +1,51 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	String sathwik=sc.next();
+    	String Praneeth=sc.next();
+    	LinkedHashMap<Character,Integer>hm=new LinkedHashMap<>();
+    	ArrayList<String>john=new ArrayList<>();
+    	for(char p:Praneeth.toCharArray()) {
+    		hm.put(p,hm.getOrDefault(p,0)+1);	
+    	}
+    	int jasanth=Praneeth.length();
+    	for(int i=0;i<sathwik.length()-jasanth+1;i++) {
+    		for(int j=i+1;j<sathwik.length()+1;j++) {
+    			String balu=sathwik.substring(i,i+jasanth);
+    			LinkedHashMap<Character,Integer>hm1=new LinkedHashMap<>();
+    			for(char re:balu.toCharArray()) {
+    				hm1.put(re,hm1.getOrDefault(re,0)+1);
+    			}
+    			boolean you=false;
+    			for(char qw:hm.keySet()) {
+    				if(hm.get(qw).equals(hm1.get(qw))) {    
+    					you=true;	
+    				}
+    				else {
+    					you=false;
+    					break;
+    				}}
+    			if (you){
+    				john.add(balu);			
+    			}
+    			
+    			
+    		}
+    	}
+    	String er="";
+    	for(String cv:john) {
+    		if(er.equals("") | er.length()>cv.length()){
+    			er=cv;
+    		}}
+       System.out.println(er);
+    		
+    	
+    	}
+    	
+    	
+    	}
+    	
