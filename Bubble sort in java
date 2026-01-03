@@ -1,0 +1,30 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int sathwik=sc.nextInt();
+    	int [] Praneeth=new int[sathwik];
+    	for(int i=0;i<Praneeth.length;i++) {
+    		Praneeth[i]=sc.nextInt();
+    	}
+    	for(int k=0;k<Praneeth.length;k++) {
+    		for(int b=0;b<Praneeth.length-k-1;b++) {
+    			if(Praneeth[b]>Praneeth[b+1]) {
+    				int temp=Praneeth[b];
+    				Praneeth[b]=Praneeth[b+1];
+    				Praneeth[b+1]=temp;
+    				
+    			}
+    		}
+    	}
+    	System.out.println(Arrays.toString(Praneeth));
+    	
+    	
+    	}
+    	
+    	
+    	}
+
