@@ -1,0 +1,19 @@
+class Solution {
+    public int sumOfUnique(int[] nums) {
+        HashMap<Integer,Integer>hm=new HashMap<>();
+        int sathwik=0;
+        for(int i:nums){
+            hm.put(i,hm.getOrDefault(i,0)+1);
+        }
+        for(int j:hm.keySet()){
+            if(hm.get(j)==1){
+                sathwik=sathwik+j;
+            }
+        }
+
+        return sathwik;
+
+
+        
+    }
+}
