@@ -1,0 +1,51 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int sathwik=sc.nextInt();
+    	int [] Praneeth=new int[sathwik];
+    	int hop=Integer.MIN_VALUE;
+    	LinkedHashSet<Integer>hm=new LinkedHashSet<>();
+    	ArrayList<Integer>balu=new ArrayList<>();
+    	for(int i=0;i<sathwik;i++) {
+    		Praneeth[i]=sc.nextInt();
+    	}
+    	for(int h:Praneeth) {
+    		hm.add(h);
+    	}
+    	ArrayList<Integer>hm1=new ArrayList<>(hm);
+    	Collections.sort(hm1);
+    	for(int p=0;p<hm1.size();p++) {
+    		int start1=hm1.get(p);
+    		int count1=1;
+    	
+    		boolean hj=false;
+    		for(int y=p+1;y<hm1.size();y++) {
+    			if(start1+1==hm1.get(y)) {
+    				count1=count1+1;
+    				start1=start1+1;
+    				hj=true;
+    			}
+    			else {
+    				if (count1>hop) {
+    					hop=count1;
+    				}
+    				balu.add(count1);
+    				hj=false;
+    				break;
+    			}}
+    		if(hj) {
+    			if(count1>hop) {
+    				hop=count1;
+    				
+    			}
+    		
+    	}}
+    
+    	System.out.println(hop);
+   
+    	
+    }}   #need to optimize
