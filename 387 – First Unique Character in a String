@@ -1,0 +1,35 @@
+class Solution {
+    public int firstUniqChar(String s) {
+        LinkedHashMap<Character,Integer>hm=new LinkedHashMap<>();
+        for(char sathwik:s.toCharArray()){
+            hm.put(sathwik,hm.getOrDefault(sathwik,0)+1);
+
+        }
+        char j=' ';
+        boolean Praneeth=false;
+        for(char balu:hm.keySet()){
+            if(hm.get(balu).equals(1)){
+                j=balu;
+                break;
+
+    }}
+    int count1=0;
+    boolean sd=false;
+
+    for(char f:s.toCharArray()){
+        if(f==j){
+            sd=true;
+            break;
+        }
+        else{
+            count1=count1+1;
+        }}
+        if(sd){
+            return count1;
+        }
+        else{
+            return -1;
+        }
+    }
+}
+
