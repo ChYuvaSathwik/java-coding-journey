@@ -1,0 +1,22 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int sathwik=sc.nextInt();
+    	int k=sc.nextInt();
+    	int [] Praneeth=new int[sathwik];
+    	int [] balu=new int[sathwik];
+    	for(int j=0;j<sathwik;j++) {
+    		Praneeth[j]=sc.nextInt();
+    		
+    	}
+    	for(int ty=sathwik-1;ty>=0;ty--) {
+    		balu[ty]=Praneeth[(ty+k)%sathwik];
+    	}
+    	System.out.println(Arrays.toString(balu));
+    }
+    	
+    }
