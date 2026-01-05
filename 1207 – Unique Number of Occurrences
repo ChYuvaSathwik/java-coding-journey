@@ -1,0 +1,24 @@
+class Solution {
+    public boolean uniqueOccurrences(int[] arr) {
+        ArrayList<Integer>sathwik=new ArrayList<>();
+        LinkedHashMap<Integer,Integer>hm=new LinkedHashMap<>();
+        for(int s:arr){
+            hm.put(s,hm.getOrDefault(s,0)+1);
+            }
+
+            for(int balu:hm.keySet()){
+                sathwik.add(hm.get(balu));
+            }
+
+        int M=sathwik.size();
+        HashSet<Integer>hm1=new HashSet<>(sathwik);
+        if(hm1.size()==M){
+            return true;
+        }
+        else{
+            return false;
+        }
+
+        
+    }
+}
