@@ -1,0 +1,28 @@
+package com.sathwik.first;
+
+import java.util.*;
+
+public class FirstProgram {
+    public static void main(String[] args) {
+    	Scanner sc=new Scanner(System.in);
+    	int sathwik=sc.nextInt();
+    	int [] Praneeth=new int[sathwik];
+     	int jas=sc.nextInt();
+    	LinkedHashMap<Integer,Integer>hm=new LinkedHashMap<>();
+    	ArrayList<Integer>hi=new ArrayList<>();
+    	for(int i=0;i<sathwik;i++) {
+    		Praneeth[i]=sc.nextInt();
+    	}
+    	for(int j:Praneeth) {
+    		hm.put(j,hm.getOrDefault(j,0)+1);
+    	}
+    	for(int h:hm.keySet()) {
+    		if(hm.get(h).equals(1)) {
+    			hi.add(h);
+    			
+    		}
+    	}
+    	System.out.println(hi.get(jas-1));    
+    	
+    	
+    }}
