@@ -1,0 +1,29 @@
+class Solution {
+    public String frequencySort(String s) {
+        LinkedHashMap<Character,Integer>hm=new LinkedHashMap<>();
+        Character ty=' ';
+        String hj="";
+
+        int h=0;
+
+        for(char t:s.toCharArray()){
+            hm.put(t,hm.getOrDefault(t,0)+1);
+        }
+        ArrayList<Map.Entry<Character,Integer>>hm1=new ArrayList<>(hm.entrySet());
+
+        hm1.sort((a,b)->Integer.compare(b.getValue(),a.getValue()));
+
+        Map.Entry<Character,Integer>op=hm1.get(0);
+
+        for(Map.Entry<Character,Integer> u:hm1){
+            ty=u.getKey();
+            h=u.getValue();
+            for(int i=0;i<h;i++){
+                hj=hj+ty;
+
+            }}
+        return hj;
+
+
+
+}}
