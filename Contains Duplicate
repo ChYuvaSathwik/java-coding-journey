@@ -1,0 +1,23 @@
+class Solution {
+    public boolean containsDuplicate(int[] nums) {
+        HashMap<Integer,Integer>hm=new HashMap<>();
+        boolean sathwik=false;
+        for(int i:nums){
+            hm.put(i,hm.getOrDefault(i,0)+1);
+        }
+        for(int k:hm.keySet()){
+            if(hm.get(k)>1){
+                sathwik=true;
+                break;
+            }
+            else{
+                sathwik=false;
+            }}
+    if(sathwik){
+        return true;
+    }
+    else{
+        return false;
+    }
+
+    }}
