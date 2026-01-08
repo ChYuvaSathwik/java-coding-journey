@@ -1,0 +1,15 @@
+class Solution {
+    public int lengthOfLastWord(String s) {
+        String [] Praneeth=s.split(" ");
+        ArrayList<String>hm=new ArrayList<>();
+        for(String p:Praneeth){
+            hm.add(p);
+        }
+
+        int sathwik=hm.size()-1;
+        String Balu=hm.get(sathwik);
+        int length_1=Balu.length();
+        return length_1;
+        
+    }
+}
