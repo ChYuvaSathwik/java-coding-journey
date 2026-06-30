@@ -1,0 +1,84 @@
+🔵 1. CLASS & OBJECT BASICS
+What is a class in Java?
+What is an object in Java?
+Why do we need classes when we can store data directly?
+Can we create multiple objects from one class?
+If we create 10,000 objects, do we need to write new 10,000 times?
+In array of objects:
+Student[] students = new Student[10000];
+
+Where is the actual object created?
+
+What does students[0] represent?
+🔵 2. OBJECT CREATION CONFUSION
+If we write:
+Student s1 = new Student();
+
+What exactly is happening in memory?
+
+What is reference variable?
+Why can’t we directly store object without reference variable?
+🔵 3. CONSTRUCTOR BASICS
+What is a constructor?
+When is constructor called?
+Does constructor have return type? Why?
+What is use of constructor?
+What happens when we create object using new keyword?
+🔵 4. DEFAULT CONSTRUCTOR
+What is default constructor?
+What happens if we don’t write any constructor in a class?
+Does Java create constructor automatically?
+🔵 5. PARAMETERIZED CONSTRUCTOR
+What is parameterized constructor?
+Why do we pass values in constructor?
+What is meaning of this?
+Student(String n, int a)
+If we pass values like "Sathwik", 21, how do they go inside constructor?
+🔵 6. CONSTRUCTOR + OBJECT CONFUSION
+If constructor sets values, why do we need display() method?
+Why do we print inside method instead of constructor?
+If constructor does not print, how do we see output?
+Is display() mandatory in Java?
+🔵 7. METHOD DISPLAY CONFUSION
+What happens inside:
+s1.display();
+How does display() know values of s1?
+Why does display() print correct values for different objects?
+What happens if display() is empty?
+🔵 8. CITY CONFUSION (VERY IMPORTANT)
+Why can we pass "Hyderabad" without declaring city in class?
+Is city stored in object or not?
+Why is city not accessible outside constructor?
+Difference between:
+class variable
+constructor parameter
+🔵 9. STORAGE VS TEMPORARY VARIABLES
+When do we store variables in class?
+When do we use constructor parameters?
+Why is city not stored in object in your example?
+What happens after constructor execution?
+🔵 10. OUTPUT FLOW QUESTIONS
+What is output of:
+Student s1 = new Student("Sathwik", 21);
+Student s2 = new Student("Rahul", 22, "Hyderabad");
+s1.display();
+s2.display();
+Which runs first: constructor or method?
+🔵 11. METHOD VS CONSTRUCTOR
+Why do we use methods if constructor already initializes values?
+What happens if we print inside constructor?
+Is it good design to print inside constructor?
+🔵 12. THIS KEYWORD INTRODUCTION
+What is this keyword?
+Why do we use this.name = name?
+What happens if we don’t use this?
+🔵 13. CONSTRUCTOR OVERLOADING
+What is constructor overloading?
+Can we have multiple constructors?
+If two constructors have same number of parameters but different types, what happens?
+Why is constructor name same as class name?
+🔵 14. FINAL UNDERSTANDING FLOW
+Explain flow:
+Student s1 = new Student("Rahul", 22);
+s1.display();
+What happens step by step from object creation to output?
